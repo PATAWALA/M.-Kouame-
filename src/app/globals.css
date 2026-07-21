@@ -1,26 +1,22 @@
 @import "tailwindcss";
 
-:root {
-  --background: #ffffff;
-  --foreground: #171717;
+@theme {
+  /* Couleurs Exécutives Dark Premium */
+  --color-brand-bg: #0B0F17;         /* Dark Slate ultra sombre */
+  --color-brand-card: #131B2A;       /* Fond de carte contrasté */
+  --color-brand-border: #1E293B;     /* Bordure discrète */
+  --color-brand-gold: #D4AF37;       /* Or Champagne Executif */
+  --color-brand-gold-hover: #B8962E;
+  --color-brand-muted: #94A3B8;      /* Texte secondaire */
+
+  /* Typographies */
+  --font-sans: var(--font-inter), sans-serif;
+  --font-serif: var(--font-playfair), serif;
 }
 
-@theme inline {
-  --color-background: var(--background);
-  --color-foreground: var(--foreground);
-  --font-sans: var(--font-geist-sans);
-  --font-mono: var(--font-geist-mono);
-}
-
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
-  }
-}
-
+/* Styles de base pour la landing page */
 body {
-  background: var(--background);
-  color: var(--foreground);
-  font-family: Arial, Helvetica, sans-serif;
+  background-color: var(--color-brand-bg);
+  color: #F8FAFC;
+  font-family: var(--font-sans);
 }
