@@ -8,13 +8,13 @@ interface StickyCtaProps {
 }
 
 export default function StickyCta({
-  whatsappNumber = "22500000000", // Remplace par son vrai numéro WhatsApp
+  whatsappNumber = "22500000000",
   clientName = "M. Kwame"
 }: StickyCtaProps) {
 
-  // Message pré-rédigé pour faciliter le premier contact sur WhatsApp
+  // Message pré-rédigé fluide et direct pour WhatsApp
   const encodedMessage = encodeURIComponent(
-    `Bonjour ${clientName}, j'ai consulté votre profil exécutif. Je souhaite réserver ma Session Stratégique Offerte de 20 min concernant une opportunité / un diagnostic opérationnel.`
+    `Bonjour ${clientName}, j'ai consulté votre page. Je souhaite échanger 20 minutes avec vous sur l'organisation de mon entreprise.`
   );
 
   const whatsappUrl = `https://wa.me/${whatsappNumber}?text=${encodedMessage}`;
@@ -37,7 +37,7 @@ export default function StickyCta({
                 {clientName}
               </span>
               <span className="text-[10px] text-brand-muted uppercase tracking-wider">
-                Executive Leadership
+                Organisation & Rentabilité
               </span>
             </div>
           </a>
@@ -45,8 +45,8 @@ export default function StickyCta({
           {/* Navigation Rapide & CTA Desktop */}
           <div className="flex items-center gap-6">
             <nav className="flex items-center gap-6 text-xs font-medium text-slate-300">
-              <a href="#expertise" className="hover:text-brand-gold transition-colors">Expertise</a>
-              <a href="#framework" className="hover:text-brand-gold transition-colors">Méthodologie</a>
+              <a href="#expertise" className="hover:text-brand-gold transition-colors">Parcours</a>
+              <a href="#framework" className="hover:text-brand-gold transition-colors">Constat</a>
               <a href="#contact" className="hover:text-brand-gold transition-colors">Contact</a>
             </nav>
 
@@ -58,7 +58,7 @@ export default function StickyCta({
               className="inline-flex items-center gap-2.5 px-5 py-2.5 rounded-xl bg-emerald-600 hover:bg-emerald-500 text-white font-semibold text-xs transition-all duration-200 shadow-lg shadow-emerald-950/40 border border-emerald-400/30 group"
             >
               <MessageSquare className="w-4 h-4 text-emerald-100 fill-emerald-100/20" />
-              <span>Session Stratégique Offerte</span>
+              <span>Échanger 20 min sur WhatsApp</span>
               <ArrowRight className="w-3.5 h-3.5 group-hover:translate-x-0.5 transition-transform" />
             </a>
           </div>
@@ -76,10 +76,10 @@ export default function StickyCta({
           <div className="flex items-center justify-between text-[11px] text-slate-300 px-1">
             <span className="flex items-center gap-1.5 text-brand-gold font-medium">
               <ShieldCheck className="w-3.5 h-3.5" />
-              Échange confidentiel (20 min)
+              Échange confidentiel
             </span>
             <span className="text-[10px] text-emerald-400 font-semibold uppercase tracking-wider bg-emerald-950/80 border border-emerald-500/30 px-2 py-0.5 rounded-full">
-              Offert
+              20 min offertes
             </span>
           </div>
 
@@ -91,7 +91,7 @@ export default function StickyCta({
             className="w-full py-3.5 px-4 rounded-xl bg-emerald-600 hover:bg-emerald-500 text-white font-semibold text-sm flex items-center justify-center gap-3 shadow-xl shadow-emerald-950/60 border border-emerald-400/30 active:scale-[0.98] transition-transform"
           >
             <MessageSquare className="w-5 h-5 fill-white/20" />
-            <span>Réserver mon Diagnostic WhatsApp</span>
+            <span>Discuter avec M. Kouame</span>
             <ArrowRight className="w-4 h-4 shrink-0" />
           </a>
 

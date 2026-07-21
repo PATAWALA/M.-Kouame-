@@ -10,7 +10,7 @@ export default function Footer() {
         
         <div className="flex items-center gap-2 text-slate-300 font-medium">
           <Shield className="w-4 h-4 text-brand-gold" />
-          <span>M. Kwame — Executive Leadership</span>
+          <span>M. Kouame — Executive Leadership</span>
         </div>
 
         <p className="text-[11px] text-brand-muted/70">

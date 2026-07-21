@@ -53,7 +53,7 @@ export default function HeroCapture({ whatsappNumber = "22500000000" }: HeroProp
                 <div className="absolute inset-0 bg-gradient-to-t from-brand-bg via-transparent to-transparent opacity-90" />
                 
                 <div className="absolute bottom-6 left-6 right-6 p-5 rounded-xl bg-brand-bg/90 backdrop-blur-md border border-brand-border">
-                  <p className="text-xs uppercase tracking-widest text-brand-gold font-bold">M. Kwame</p>
+                  <p className="text-xs uppercase tracking-widest text-brand-gold font-bold">M. Kouame</p>
                   <p className="text-base font-semibold text-slate-100">Direction & Pilotage d'Établissements</p>
                 </div>
               </div>
